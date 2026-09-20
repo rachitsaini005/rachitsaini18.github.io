@@ -28,8 +28,8 @@
     --border-dark: #e9e9e9;
     --footer-bg: #f2f3f3;
     --gutter: 18px;              /* shared left/right padding so header, content, footer align */
-    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
     --serif: Georgia, "Times New Roman", Times, serif;
+    --logo-radius: 10px;         /* soft-cornered logos, like LinkedIn */
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -39,7 +39,7 @@
   }
 
   body {
-    font-family: var(--sans);
+    font-family: var(--serif);
     color: var(--text);
     background: #ffffff;
     font-size: 18px;
@@ -207,19 +207,20 @@
     justify-content: center;
   }
   .entry-logo img {
+    width: auto;
+    height: auto;
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
     display: block;
+    border-radius: var(--logo-radius);
   }
   .entry-title {
-    font-family: var(--serif);
     font-size: 1.15rem;
     line-height: 1.35;
     color: var(--heading);
   }
   .entry-sub {
-    font-family: var(--serif);
     font-size: .92rem;
     line-height: 1.4;
     color: var(--muted);
@@ -236,7 +237,6 @@
   }
   .two-col h2 { margin-top: 0; }
   .content .interest-list li {
-    font-family: var(--serif);
     font-size: 1.05rem;
     line-height: 1.5;
     margin-bottom: .5em;
@@ -247,6 +247,7 @@
     .two-col > section + section { margin-top: 2rem; }
   }
   @media (max-width: 480px) {
+    :root { --logo-radius: 8px; }
     .entry-logo { flex-basis: 44px; width: 44px; height: 44px; }
     .content .entry { gap: .85rem; }
   }
