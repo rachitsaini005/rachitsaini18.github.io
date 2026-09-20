@@ -29,15 +29,14 @@
     --footer-bg: #f2f3f3;
     --gutter: 18px;              /* shared left/right padding so header, content, footer align */
     --serif: Georgia, "Times New Roman", Times, serif;
-    --logo-size: 42px;           /* logo box (was 56px) */
-    --logo-radius: 8px;          /* soft-cornered logos, like LinkedIn */
+    --logo-size: 39px;           /* logo box: 70% of the original 56px */
+    --logo-radius: 4px;          /* gently softened corners */
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  /* One knob for overall text size: 75% of the previous size.
-     Raise it (e.g. 85%) if the text feels too small. */
-  html { font-size: 75%; }
+  /* One knob for overall text size: 85% of the original size. */
+  html { font-size: 85%; }
 
   @media (prefers-reduced-motion: no-preference) {
     html { scroll-behavior: smooth; }
@@ -158,8 +157,8 @@
     white-space: nowrap;
   }
   .author-links svg {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     fill: var(--muted);
     flex-shrink: 0;
   }
@@ -252,7 +251,7 @@
     .two-col > section + section { margin-top: 2rem; }
   }
   @media (max-width: 480px) {
-    :root { --logo-size: 33px; --logo-radius: 6px; }
+    :root { --logo-size: 31px; --logo-radius: 3px; }
     .content .entry { gap: .85rem; }
   }
 
@@ -345,14 +344,14 @@
       <h2 id="experience-heading">Experience</h2>
       <ul class="entry-list">
         <li class="entry">
-          <span class="entry-logo"><img src="logos/organization-1.png" alt="" width="42" height="42" loading="lazy" onerror="this.style.visibility='hidden'" /></span>
+          <span class="entry-logo"><img src="logos/organization-1.png" alt="" width="39" height="39" loading="lazy" onerror="this.style.visibility='hidden'" /></span>
           <div class="entry-text">
             <div class="entry-title">Your Role Title, <span class="nowrap">Start&ndash;End</span></div>
             <div class="entry-sub">Organization Name, City, Country</div>
           </div>
         </li>
         <li class="entry">
-          <span class="entry-logo"><img src="logos/organization-2.png" alt="" width="42" height="42" loading="lazy" onerror="this.style.visibility='hidden'" /></span>
+          <span class="entry-logo"><img src="logos/organization-2.png" alt="" width="39" height="39" loading="lazy" onerror="this.style.visibility='hidden'" /></span>
           <div class="entry-text">
             <div class="entry-title">Your Role Title, <span class="nowrap">Start&ndash;End</span></div>
             <div class="entry-sub">Organization Name, City, Country</div>
@@ -367,21 +366,21 @@
         <h2 id="education-heading">Education</h2>
         <ul class="entry-list">
           <li class="entry">
-            <span class="entry-logo"><img src="logos/tiet.png" alt="" width="42" height="42" loading="lazy" onerror="this.style.visibility='hidden'" /></span>
+            <span class="entry-logo"><img src="logos/tiet.png" alt="" width="39" height="39" loading="lazy" onerror="this.style.visibility='hidden'" /></span>
             <div class="entry-text">
               <div class="entry-title">Bachelor of Engineering (B.E.), Electrical Engineering, <span class="nowrap">2023&ndash;2027</span></div>
               <div class="entry-sub">Thapar Institute of Engineering &amp; Technology (TIET), Patiala, India</div>
             </div>
           </li>
           <li class="entry">
-            <span class="entry-logo"><img src="logos/sri-chaitanya.png" alt="" width="42" height="42" loading="lazy" onerror="this.style.visibility='hidden'" /></span>
+            <span class="entry-logo"><img src="logos/sri-chaitanya.png" alt="" width="39" height="39" loading="lazy" onerror="this.style.visibility='hidden'" /></span>
             <div class="entry-text">
               <div class="entry-title">Class XII (AISSCE), 2023</div>
               <div class="entry-sub">Sri Chaitanya Techno School, Dehradun, India</div>
             </div>
           </li>
           <li class="entry">
-            <span class="entry-logo"><img src="logos/kv-fri.png" alt="" width="42" height="42" loading="lazy" onerror="this.style.visibility='hidden'" /></span>
+            <span class="entry-logo"><img src="logos/kv-fri.png" alt="" width="39" height="39" loading="lazy" onerror="this.style.visibility='hidden'" /></span>
             <div class="entry-text">
               <div class="entry-title">Class X (AISSE), 2021</div>
               <div class="entry-sub">Kendriya Vidyalaya FRI, Dehradun, India</div>
@@ -389,7 +388,7 @@
           </li>
         </ul>
       </section>
-
+      
     </div>
   </main>
 
