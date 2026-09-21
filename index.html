@@ -230,6 +230,16 @@
     color: var(--muted);
     margin-top: .15rem;
   }
+    /* Entry links: look like normal text, underline + colour on hover */
+  .content .entry a { color: inherit; text-decoration: none; }
+  .content .entry-sub a:hover { color: var(--link-hover); text-decoration: underline; }
+  .entry-logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
 
   /* Education (wide) beside Interests (narrow) */
   .two-col {
